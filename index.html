@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+
+    <!-- Font awesome icon -->
+    <script src="https://kit.fontawesome.com/9a8af5029a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+
+
+    <nav>
+      <div class="menuContainer">
+        <img src="img/logo.png" class="logo" alt="">
+        <div class="menu">
+          <button><a href="#" class="btn">Home</a></button>
+          <div class="services">
+            <button>Services<i class="fas fa-caret-down"></i></button>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Mobile App Design</a></li>
+              <li><a href="#">Graphic Design</a></li>
+              <li><a href="#">Online Marketing</a></li>
+            </ul>
+          </div>
+          <button><a href="#" class="btn">Portfolio</a></button>
+          <button><a href="#" class="btn">About us</a></button>
+          <button><a href="#" class="btn">Contact</a></button>
+        </div>
+        <div class="quote">
+          <button><a href="#" class="cta">Get a quote</a></button>
+          <button onclick="document.getElementById('id01').style.display='block'"><a href="#" class=" login btn">
+              <i class="fas fa-xs fa-unlock"></i>Login</a></button>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="https://www.w3schools.com/action_page.php">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="img/avatar4.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button class="enter" type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+
+  <section>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="background"></div>
+        <div class="big_heading text animated slideInDown">WEB <BR>DESIGN</BR></div>
+        <div class="sub_text text animated fadeInDown">Solution that suit your business</BR></div>
+        <div class="slbtn text animated bounceIn"><a href="#">Hire us</a></div>
+        <div class="img_slide animated zoomIn"><span><img src="img/web.png" alt=""></span></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="background2"></div>
+        <div class="big_heading2 text animated zoomIn">iOS & ANDROID</div>
+        <div class="big_slim text animated fadeInDown">APP DESIGN</div>
+        <div class="sub_text2 text animated fadeInDown">Bring your app ideas into reality</BR></div>
+        <div class="slbtn2 text animated fadeInUp"><a href="#">Hire us</a></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="background3"></div>
+        <div class="big_heading3 text animated fadeInUp">GRAPHIC</div>
+        <div class="outlineText text animated fadeInDown">DESIGN</div>
+        <div class="sub_text3 text animated fadeInDown">We design logo, flyer, brochure & more
+        </div>
+        <div class="slbtn3 text animated fadeInUp"><a href="#">Hire us</a></div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+  </section>
+
+
+  <section id="services">
+    <div class="serviceContainer">
+      <h1 class="headIntro" data-aos="fade-in">
+        We are one of the most effective IT <br /> Companies in Ghana <br />
+        <span>TRUSTED BY HUNDREDS OF CUSTOMERS</span>
+      </h1>
+      <div class="line"></div>
+      <h1 class="mainHead" data-aos="fade-in">AREAS OF EXPERTISE</h1>
+
+      <div class="serviceBox">
+        <div class="boxContent" data-aos="fade-right">
+          <div class="icon"><img src="img/web-icon.png" alt=""></div>
+          <h3>WEB DEVELOPMENT</h3>
+          <ul>
+            <li>Ecommerce</li>
+            <li>Corporate</li>
+            <li>Trave, Blog</li>
+          </ul>
+          <div class="readMore"><a href="#">Read more</a></div>
+        </div>
+
+        <div class="boxContent" data-aos="fade-up">
+          <div class="icon"><img src="img/graphic-icon.png" alt=""></div>
+          <h3>GRAPHIC DESIGN</h3>
+          <ul>
+            <li>Logo</li>
+            <li>Flyers</li>
+            <li>Brochure & more</li>
+          </ul>
+          <div class="readMore"><a href="#">Read more</a></div>
+        </div>
+
+        <div class="boxContent" data-aos="fade-left">
+          <div class="icon"><img src="img/app-icon.png" alt=""></div>
+          <h3>APP DEVELOPMENT</h3>
+          <ul>
+            <li>iOS Apps</li>
+            <li>Android</li>
+            <li>Desktop</li>
+          </ul>
+          <div class="readMore"><a href="#">Read more</a></div>
+        </div>
+      </div>
+
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/arrow.png" alt=""></button>
+  </section>
+
+  <section id="portfolio">
+    <div class="portfolioContainer">
+      <h1>JOBS COMPLETED</h1>
+      <P>We have design over hundreds of graphic, website <br>and apps. Go to our <a href="#">portfolio</a> to see
+        more.</P>
+      <div class="owl-carousel owl-theme">
+        <a href="img/large1.jpg" data-fancybox data-caption="Caption for single image">
+          <div> <img src="img/thumbnail1.jpg" alt=""> </div>
+          <div class="overlay">
+            <h6 class="text">Flyer</h6>
+          </div>
+        </a>
+        <a href="img/large2.jpg" data-fancybox data-caption="Caption for single image">
+          <div> <img src="img/thumbnail2.jpg" alt=""> </div>
+          <div class="overlay">
+            <div class="text">Brochure</div>
+          </div>
+        </a>
+        <a href="img/large3.jpg" data-fancybox data-caption="Caption for single image">
+          <div> <img src="img/thumbnail3.jpg" alt=""> </div>
+          <div class="overlay">
+            <div class="text">Magazine</div>
+          </div>
+        </a>
+        <a href="img/large4.jpg" data-fancybox data-caption="Caption for single image">
+          <div> <img src="img/thumbnail4.jpg" alt=""> </div>
+          <div class="overlay">
+            <div class="text">Catalog</div>
+          </div>
+        </a>
+        <a href="img/large5.jpg" data-fancybox data-caption="Caption for single image">
+          <div> <img src="img/thumbnail5.jpg" alt=""> </div>
+          <div class="overlay">
+            <div class="text">Brochure</div>
+          </div>
+        </a>
+        <a href="img/large6.jpg" data-fancybox data-caption="Caption for single image">
+          <div> <img src="img/thumbnail6.jpg" alt=""> </div>
+          <div class="overlay">
+            <div class="text">Roll-up Stand</div>
+          </div>
+        </a>
+        <a href="img/large7.jpg" data-fancybox data-caption="Caption for single image">
+          <div> <img src="img/thumbnail7.jpg" alt=""> </div>
+          <div class="overlay">
+            <div class="text">Call Card</div>
+          </div>
+        </a>
+        <a href="img/large8.jpg" data-fancybox data-caption="Caption for single image">
+          <div> <img src="img/thumbnail8.jpg" alt=""> </div>
+          <div class="overlay">
+            <div class="text">ID Card</div>
+          </div>
+        </a>
+        <a href="img/large1.jpg" data-fancybox data-caption="Caption for single image">
+          <div> <img src="img/thumbnail1.jpg" alt=""> </div>
+          <div class="overlay">
+            <div class="text">Flyer</div>
+          </div>
+        </a>
+        <a href="img/large1.jpg" data-fancybox data-caption="Caption for single image">
+          <div> <img src="img/thumbnail1.jpg" alt=""> </div>
+          <div class="overlay">
+            <div class="text">Flyer</div>
+          </div>
+        </a>
+        <a href="img/large1.jpg" data-fancybox data-caption="Caption for single image">
+          <div> <img src="img/thumbnail1.jpg" alt=""> </div>
+          <div class="overlay">
+            <div class="text">Flyer</div>
+          </div>
+        </a>
+        <a href="img/large1.jpg" data-fancybox data-caption="Caption for single image">
+          <div> <img src="img/thumbnail1.jpg" alt=""> </div>
+          <div class="overlay">
+            <div class="text">Flyer</div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+  
+
+  <section id="pricing">
+    <div class="priceSection">
+      <h1 data-aos="fade-in">BUNDLE PRICING</h1>
+      <div class="priceContainer">
+        <div class="priceBox" data-aos="fade-right">
+          <div class="head">
+            <h2>Branding</h2>
+            <p>1 Week Duration</p>
+          </div>
+
+          <ul>
+            <li>Logo Design</li>
+            <li>Brochure Design</li>
+            <li>Flyer Design</li>
+            <li>Business Card</li>
+          </ul>
+        </div>
+
+
+        <div class="priceBox" data-aos="fade-up">
+          <div class="head">
+            <h2>Basic Website</h2>
+            <p>10 Days Duration</p>
+          </div>
+
+          <ul>
+            <li>5-7 Pages</li>
+            <li>Newsletter Signup</li>
+            <li>Content Slider</li>
+            <li>Contact Form</li>
+          </ul>
+        </div>
+
+
+        <div class="priceBox" data-aos="fade-left">
+          <div class="head">
+            <h2>Basic App</h2>
+            <p>2 Weeks Duration</p>
+          </div>
+
+          <ul>
+            <li>iOS & Android</li>
+            <li>Account and Setting</li>
+            <li>Menu Navigation</li>
+            <li>Location Access</li>
+          </ul>
+        </div>
+
+
+      </div>
+      <div class="ctaBox">
+        <h3>WANT A CUSTOM SERVICE?</h3>
+        <a class="priceCTA" href="#">Request a quote</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="testimonial">
+
+
+    <div class="TeamHeader">
+      <div class="teamText">
+        <h1>OUR TEAM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> mollitia fugiat possimus, es
+          Lorem ipsum godsrewd <br> mollitia fugiat possimus, es
+          Lorem ipsum godsrewd <br> mollitia fugiat possimus, es
+        </p>
+      </div>
+      <div class="teamCareer">
+        <ul class="pad">
+          <li>WEBSITE DEVELOPMENT</li>
+          <li>APP DEVELOPMENT</li>
+          <li>GRAPHIC DESIGN</li>
+        </ul>
+        <ul>
+          <span>
+            <li>95%</li>
+            <li>90%</li>
+            <li>97%</li>
+          </span>
+        </ul>
+      </div>
+    </div>
+    <div class="teamBox">
+      <div class="teamMember">
+        <img src="img/pic1.jpg" alt="" class="avatar">
+        <h2>Layee Kromah</h2>
+        <ul>
+          <li>WEB DEVELOPER</li>
+          <li>GRAPHIC DESIGNER</li>
+        </ul>
+        <span>
+          <ul>
+            <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="img/pinterest.png" alt=""></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="img/dribbble.png" alt=""></a></li>
+          </ul>
+        </span>
+        <a class="teamButton" href="#">CONTACT</a>
+      </div>
+
+      <div class="teamMember">
+        <img src="img/pic2.jpg" alt="" class="avatar">
+        <h2>KESTER HOWARD</h2>
+        <ul>
+          <li>DIGITAL ARTIST</li>
+          <li>GRAPHIC DESIGNER</li>
+        </ul>
+        <span>
+          <ul>
+            <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="img/pinterest.png" alt=""></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="img/dribbble.png" alt=""></a></li>
+          </ul>
+        </span>
+        <a class="teamButton" href="#">CONTACT</a>
+      </div>
+
+    </div>
+  
+
+  </section>
+
+
+  
+
+  <section id="team">
+    <div class="testimonialContainer">
+      <h1 data-aos="fade-up">WHAT CLIENTS SAY</h1>
+      <p data-aos="fade-up">Reviews made by our beloved clients. Please <br> check on google review for more.</p>
+      <div class="divider"></div>
+
+        <!-- Full-width images with number and caption text -->
+        <div class="testimonialSlide fade">
+          <div class="reviewBox">
+              <div class="reviewImage" data-aos="fade-left">
+                <img src="img/avatar.jpg" alt="">
+                <h4>Robert Williams</h4>
+                <span>Enterpreneur</span>
+              </div>
+              <div class="reviewTextBox" data-aos="fade-right">
+                <img src="img/icon_1.png" alt="">
+                  <div class="reviewText">
+                      I'm amazed with how great my branding turn out. The logo, flyer, brochure and business card
+                      look very professional. This is just what I needed for my business <br><br> I will definitely
+                      be back for more whenever needed.
+                    </div>
+              </div>
+            </div>
+        </div>
+      
+        <div class="testimonialSlide fade">
+          <div class="reviewBox">
+              <div class="reviewImage">
+                <img src="img/pic1.jpg" alt="">
+                <h4>John Snow</h4>
+                <span>Actor</span>
+              </div>
+              <div class="reviewTextBox">
+                <img src="img/icon_1.png" alt="">
+                  <div class="reviewText">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque provident, quaerat, ducimus
+                        perspiciatis
+                        porro doloreanditiis, inventore officia? <br><br> Quibusdam, rem nam.
+                        Rem quisquam magnam assumenda quo ectus
+                    </div>
+              </div>
+            </div>
+        </div>
+      
+        <div class="testimonialSlide fade">
+          <div class="reviewBox">
+              <div class="reviewImage">
+                <img src="img/pic2.jpg" alt="">
+                <h4>Steven James</h4>
+                <span>Designer</span>
+              </div>
+              <div class="reviewTextBox">
+                <img src="img/icon_1.png" alt="">
+                  <div class="reviewText">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque provident, quaerat, ducimus
+                        perspiciatis
+                        porro doloreanditiis, inventore officia? <br><br> Quibusdam, rem nam.
+                        Rem quisquam magnam assumenda quo ectus
+                    </div>
+              </div>
+            </div>
+        </div>
+
+           <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      
+      </div>
+      <br>
+      
+      
+      
+   
+
+    </div>
+
+  </section>
+
+
+  <section id="trustedPartner">
+
+        <h1 data-aos="fade-up">Trusted partners</h1>
+        <p data-aos="fade-up">Below are few of the popular companies we've rendered services. <br>
+        We also callaborate with some of these companies in order to deliver a better service</p>
+
+        <div class="partners" data-aos="fade-up">
+          <img src="img/clientLogo1.png" alt="">
+          <img src="img/clientLogo2.png" alt="">
+          <img src="img/clientLogo1.png" alt="">
+          <img src="img/clientLogo1.png" alt="">
+          <img src="img/clientLogo1.png" alt="">
+          <img src="img/clientLogo1.png" alt="">
+        </div>
+  
+  </section>
+
+
+  <section id="newsletter">
+    <div class="newsSignup" data-aos="fade-right">
+      <h4>SUBSCRIBE TO</h4>
+      <h1>NEWSLETTER</h1>
+      <form action="">
+        <input class="input" type="text" placeholder="Name" name="name" autocomplete="on" required> <br>
+        <input class="input" type="email" placeholder="Email" name="email" autocomplete="on" required> <br>
+        <input class="submit" type="submit" name="submit" value="Subscribe">
+      </form>
+    </div>
+    <div class="address" data-aos="fade-left">
+      <h2>FIND US HERE</h2>
+      <div id="map"></div>
+    </div>
+  </section>
+
+
+
+  <section id="footer">
+    <div class="location">
+      <h2><span>KES & HAM</span> <BR> DESIGN STUDIO</BR></h2>
+      <p>434 Sun city <br>Kasoa new road</p>
+    </div>
+    <ul>
+      <li>WEP DEVELOPMENT</li>
+      <li>APP DESIGN</li>
+      <li>GRAPHIC DESIGN</li>
+      <li>PORTFOLIO</li>
+    </ul>
+    <ul>
+     <li>FAQ</li>
+        <li>SUPPORT</li>
+        <li>POLICY</li>
+      </ul>
+      <div class="social">
+          <h4>CONNECT WITH US</h4>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-behance"></i>
+          <i class="fab fa-pinterest-p"></i>
+      </div>
+  </section>
+
+  <section id="copyright">
+    <p>K&H Design Studio © copyright 2019, All rights reserved. </p>
+  </section>
+
+
+
+
+
+
+
+  <!-- AOS Scroll loader -->
+
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 80,
+      duration: 1000
+    });
+  </script>
+
+
+  <!-- carousel script -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+
+  <!-- carousel script -->
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+
+      });
+    });
+  </script>
+
+  <!-- fancyBox initialize -->
+  <script>
+    $('[data-fancybox="gallery"]').fancybox({
+      // Options will go here
+    });
+  </script>
+
+
+
+  <!-- -- Slider SCRIPT -- -->
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+
+    // // Automatic play
+    // var slideIndex = 0;
+    // showSlides();
+
+    // function showSlides() {
+    //   var i;
+    //   var slides = document.getElementsByClassName("mySlides");
+    //   var dots = document.getElementsByClassName("dot");
+    //   for (i = 0; i < slides.length; i++) {
+    //     slides[i].style.display = "none";
+    //   }
+    //   slideIndex++;
+    //   if (slideIndex > slides.length) { slideIndex = 1 }
+    //   for (i = 0; i < dots.length; i++) {
+    //     dots[i].className = dots[i].className.replace(" active", "");
+    //   }
+    //   slides[slideIndex - 1].style.display = "block";
+    //   dots[slideIndex - 1].className += " active";
+    //   setTimeout(showSlides, 2000); // Change image every 2 seconds
+    // }
+  </script>
+
+  <!-- Google map  -->
+
+  <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var uluru = {lat: -25.344, lng: 131.036};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 4, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map});
+      }
+  </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4lDd53rnIXYG4Ob4o8f0LoBu1lylfsVg&callback=initMap">
+          </script>
+
+
+
+
+
+  
+  <!-- Testimonial Slider script -->
+
+<script>
+  var slideNum = 1;
+  showSlide(slideNum);
+  
+  // Next/previous controls
+  function plusSlide(n) {
+    showSlide(slideNum += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlide(slideNum = n);
+  }
+  
+  function showSlide(n) {
+    var i;
+    var slides = document.getElementsByClassName("testimonialSlide");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideNum = 1}
+    if (n < 1) {slideNum = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideNum-1].style.display = "block";
+    dots[slideNum-1].className += " active";
+  }
+  
+  // AUTO CHANGE 2 SECONDS
+  
+  // var slideNum = 0;
+  // showSlide();
+  
+  // function showSlide() {
+  //   var i;
+  //   var slides = document.getElementsByClassName("testimonialSlide");
+  //   for (i = 0; i < slides.length; i++) {
+  //     slides[i].style.display = "none";
+  //   }
+  //   slideNum++;
+  //   if (slideNum > slides.length) {slideNum = 1}
+  //   slides[slideNum-1].style.display = "block";
+  //   setTimeout(showSlide, 9000); // Change image every 2 seconds
+  // }
+  
+  </script>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+  
+  
+
+</body>
+
+</html>
